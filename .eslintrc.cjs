@@ -42,6 +42,7 @@ module.exports = {
     'vue/order-in-components': 'off',
     'vue/require-default-prop': 'off',
     'vue/require-prop-types': 'off',
-    'vue/no-template-shadow': 'off'
+    'vue/no-template-shadow': 'off',
+    'vue/no-unused-components': 'off'
   }
 }
