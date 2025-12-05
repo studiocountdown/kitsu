@@ -96,7 +96,7 @@
             name: 'todos',
             query: { section: 'todos' }
           }"
-          v-if="!isCurrentUserAdmin && !isCurrentUserClient"
+          v-if="!isCurrentUserClient"
         >
           {{ $t('tasks.my_tasks') }}
         </router-link>
@@ -107,7 +107,7 @@
             name: 'todos',
             query: { section: 'timesheets' }
           }"
-          v-if="!isCurrentUserAdmin && !isCurrentUserClient"
+          v-if="!isCurrentUserClient"
         >
           {{ $t('timesheets.title') }}
         </router-link>
