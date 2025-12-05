@@ -70,7 +70,10 @@
           @validate="confirmLogIn"
           @changed-two-fa="changedTwoFA"
         />
-        <p v-if="!(isMissingOTP || isWrongOTP)" class="control cntdwn-kitsuinternalauth">
+        <p
+          v-if="!(isMissingOTP || isWrongOTP)"
+          class="control cntdwn-kitsuinternalauth"
+        >
           <a
             class="button main-button is-fullwidth"
             :class="{
@@ -94,7 +97,10 @@
           {{ $t('login.login_failed') }}
         </p>
 
-        <p v-if="!(isMissingOTP || isWrongOTP)" class="has-text-centered cntdwn-kitsuinternalauth">
+        <p
+          v-if="!(isMissingOTP || isWrongOTP)"
+          class="has-text-centered cntdwn-kitsuinternalauth"
+        >
           <router-link :to="{ name: 'reset-password' }">
             {{ $t('login.forgot_password') }}
           </router-link>
