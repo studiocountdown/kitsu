@@ -33,7 +33,7 @@ export const PRODUCTION_STYLE_OPTIONS = [
   { label: 'archviz', value: 'archviz' },
   { label: 'stop_motion', value: 'stop-motion' },
   { label: 'catalog', value: 'catalog' },
-  { label: 'nft', value: 'nft' },
+  /* { label: 'nft', value: 'nft' }, */
   { label: 'video_game', value: 'video-game' },
   { label: 'immersive', value: 'immersive' },
   { label: 'ar', value: 'ar' }
