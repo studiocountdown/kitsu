@@ -208,7 +208,9 @@
             {{ $t('main.about') }}
           </a>
         </li>
-        <li class="version">Kitsu {{ kitsuVersion }}<br/>(Studio Countdown)</li>
+        <li class="version">
+          Kitsu {{ kitsuVersion }}<br />(Studio Countdown)
+        </li>
         <hr />
         <li>
           <router-link :to="{ name: 'logout' }" class="flexrow">
