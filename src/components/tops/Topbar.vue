@@ -69,6 +69,7 @@
       </div>
 
       <div class="nav-right">
+        <!--
         <a
           class="nav-item kitsu-summit-button"
           href="https://cg-wire.com/kitsu-summit"
@@ -77,6 +78,7 @@
         >
           Kitsu Summit 2026
         </a>
+        -->
 
         <router-link
           class="nav-item"
@@ -160,6 +162,7 @@
         <li @click="toggleDarkTheme">
           {{ !isDarkTheme ? $t('main.dark_theme') : $t('main.white_theme') }}
         </li>
+        <!--
         <li @click="setSupportChat(!isSupportChat)">
           {{
             isSupportChat
@@ -167,6 +170,7 @@
               : $t('main.show_support_chat')
           }}
         </li>
+        -->
         <hr />
         <li>
           <a
@@ -204,7 +208,7 @@
             {{ $t('main.about') }}
           </a>
         </li>
-        <li class="version">Kitsu {{ kitsuVersion }}</li>
+        <li class="version">Kitsu {{ kitsuVersion }}<br/>(Studio Countdown)</li>
         <hr />
         <li>
           <router-link :to="{ name: 'logout' }" class="flexrow">
