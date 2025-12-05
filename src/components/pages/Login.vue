@@ -16,17 +16,17 @@
           <div class="field" v-if="mainConfig?.saml_enabled">
             <p class="control">
               <a
-                class="button is-fullwidth"
+                class="button main-button is-fullwidth"
                 :class="{
                   'is-loading': isLoginLoading
                 }"
                 href="/api/auth/saml/login"
               >
-                {{ loginSAMLButtonInfo }}
+                {{ $t('login.login') }}
               </a>
             </p>
           </div>
-          <div class="field mt2">
+          <div class="field mt2 cntdwn-kitsuinternalauth">
             <p class="control has-icon">
               <input
                 class="input is-medium email"
@@ -43,7 +43,7 @@
               </span>
             </p>
           </div>
-          <div class="field">
+          <div class="field cntdwn-kitsuinternalauth">
             <p class="control has-icon">
               <input
                 class="input is-medium password"
@@ -70,7 +70,7 @@
           @validate="confirmLogIn"
           @changed-two-fa="changedTwoFA"
         />
-        <p v-if="!(isMissingOTP || isWrongOTP)" class="control">
+        <p v-if="!(isMissingOTP || isWrongOTP)" class="control cntdwn-kitsuinternalauth">
           <a
             class="button main-button is-fullwidth"
             :class="{
@@ -94,7 +94,7 @@
           {{ $t('login.login_failed') }}
         </p>
 
-        <p v-if="!(isMissingOTP || isWrongOTP)" class="has-text-centered">
+        <p v-if="!(isMissingOTP || isWrongOTP)" class="has-text-centered cntdwn-kitsuinternalauth">
           <router-link :to="{ name: 'reset-password' }">
             {{ $t('login.forgot_password') }}
           </router-link>
@@ -308,5 +308,9 @@ export default {
     width: 100%;
     min-width: 100%;
   }
+}
+
+.cntdwn-kitsuinternalauth {
+  display: none;
 }
 </style>
