@@ -38,17 +38,17 @@
         </h2>
         <text-field
           :label="$t('people.fields.first_name')"
-          :disabled="user.is_generated_from_ldap"
+          disabled="true"
           v-model="form.first_name"
         />
         <text-field
           :label="$t('people.fields.last_name')"
-          :disabled="user.is_generated_from_ldap"
+          disabled="true"
           v-model="form.last_name"
         />
         <text-field
           :label="$t('people.fields.email')"
-          :disabled="user.is_generated_from_ldap"
+          disabled="true"
           v-model="form.email"
         />
         <text-field :label="$t('people.fields.phone')" v-model="form.phone" />
@@ -102,6 +102,7 @@
         <div class="field">
           <combobox-boolean
             :label="$t('profile.notifications_slack_enabled')"
+            disabled="true"
             v-model="form.notifications_slack_enabled"
           />
         </div>
@@ -115,6 +116,7 @@
         <div class="field">
           <combobox-boolean
             :label="$t('profile.notifications_mattermost_enabled')"
+            disabled="true"
             v-model="form.notifications_mattermost_enabled"
           />
         </div>
@@ -128,6 +130,7 @@
         <div class="field">
           <combobox-boolean
             :label="$t('profile.notifications_discord_enabled')"
+            disabled="true"
             v-model="form.notifications_discord_enabled"
           />
         </div>
@@ -158,6 +161,7 @@
           {{ $t('profile.save.error') }}
         </p>
 
+        <!--
         <h2>
           {{ $t('profile.password_title') }}
         </h2>
@@ -225,7 +229,9 @@
         >
           {{ $t('profile.change_password.error') }}
         </p>
+        -->
 
+        <!--
         <h2>
           {{ $t('profile.two_factor_authentication.title') }}
         </h2>
@@ -567,6 +573,7 @@
         >
           {{ $t('profile.two_factor_authentication.fido.error_unregister') }}
         </p>
+        -->
       </div>
     </div>
 
